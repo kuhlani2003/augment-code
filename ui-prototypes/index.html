@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>فهرس الشاشات - نماذج أولية</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <style>
+        .cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: var(--space-4); }
+        .card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: var(--space-4); box-shadow: var(--shadow-sm); }
+        .card h3 { margin: 0 0 var(--space-2); font-size: 1.1rem; }
+        .card p { margin: 0 0 var(--space-3); color: var(--text-2); }
+        header { display:flex; justify-content: space-between; align-items: center; gap: var(--space-3); }
+        .tag { display:inline-block; padding: 4px 8px; background: var(--accent-1); color: var(--accent-9); border-radius: 999px; font-size: .8rem; }
+    </style>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='46' fill='%23225' /><text x='50' y='60' text-anchor='middle' font-size='56' fill='white'>ع</text></svg>">
+    <meta name="description" content="نماذج أولية للشاشات العربية (RTL)">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>فهرس الشاشات (نماذج أولية)</h1>
+            <span class="tag">RTL</span>
+        </header>
+        <p class="muted">استخدم هذا الفهرس للتنقل بين الشاشات غير الموجودة بعد في النظام.</p>
+
+        <nav class="toolbar">
+            <a class="btn" href="screens/sample.html">شاشة نموذجية</a>
+            <a class="btn" href="screens/auth-login.html">تسجيل الدخول</a>
+            <a class="btn" href="screens/dashboard.html">لوحة المعلومات</a>
+            <a class="btn" href="screens/users-list.html">المستخدمون</a>
+        </nav>
+
+        <section class="cards">
+            <article class="card">
+                <h3>شاشة نموذجية</h3>
+                <p>مثال عام يوضح الهيكل، العناوين، الحقول، والأزرار.</p>
+                <div class="actions">
+                    <a class="btn" href="screens/sample.html">فتح</a>
+                </div>
+            </article>
+            <article class="card">
+                <h3>تسجيل الدخول</h3>
+                <p>واجهة إدخال بيانات المستخدم وكلمة المرور مع تذكرني.</p>
+                <div class="actions">
+                    <a class="btn" href="screens/auth-login.html">فتح</a>
+                </div>
+            </article>
+            <article class="card">
+                <h3>لوحة المعلومات</h3>
+                <p>إحصائيات وعمليات حديثة بنمط RTL.</p>
+                <div class="actions">
+                    <a class="btn" href="screens/dashboard.html">فتح</a>
+                </div>
+            </article>
+            <article class="card">
+                <h3>المستخدمون</h3>
+                <p>جدول عرض المستخدمين وروابط التعديل والحذف.</p>
+                <div class="actions">
+                    <a class="btn" href="screens/users-list.html">فتح</a>
+                </div>
+            </article>
+        </section>
+    </div>
+</body>
+</html>

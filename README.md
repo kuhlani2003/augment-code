@@ -199,3 +199,12 @@ This tool is provided "as is" without warranty. While we take care to only remov
 ![Issues](https://img.shields.io/github/issues/professor-david/augment-cleaner?style=flat-square)
 
 </div>
+
+## 🧪 UI Prototypes (Arabic Screens)
+
+هذه المستودع يتضمن الآن نماذج أولية لشاشات عربية غير مرتبطة بالكود التنفيذي، موجودة في المسار `ui-prototypes/`. يمكن فتحها مباشرة بالمتصفح لمراجعة التصميم وتجربة التدفق:
+
+- `ui-prototypes/index.html` — فهرس الشاشات وروابط التنقل
+- `ui-prototypes/styles/base.css` — نمط أساسي موحد RTL ودعم العربية
+
+> الهدف منها تسريع مراجعة تجربة الاستخدام قبل الدمج مع أي إطار عمل.

@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>شاشة نموذجية</title>
+  <link rel="stylesheet" href="../styles/base.css">
+  <style>
+    .layout { display: grid; grid-template-columns: 260px 1fr; gap: var(--space-4); }
+    aside { position: sticky; top: 12px; align-self: start; }
+    .navlist { list-style: none; margin: 0; padding: 0; }
+    .navlist a { display:block; padding: 10px 12px; border-radius: 8px; color: var(--text-1); text-decoration: none; }
+    .navlist a:hover { background: #0e1733; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="page-header">
+      <div>
+        <div class="breadcrumbs"><a href="../index.html" class="btn" style="padding:6px 10px">العودة</a></div>
+        <h1>شاشة نموذجية</h1>
+      </div>
+      <div class="actions">
+        <button class="btn">حفظ</button>
+        <button class="btn" style="background: linear-gradient(180deg, #f8d964, #f4a261);">حفظ كمسودة</button>
+      </div>
+    </div>
+
+    <div class="layout">
+      <aside class="card-surface">
+        <h3 style="margin-top:0">التنقل</h3>
+        <ul class="navlist">
+          <li><a href="#info">المعلومات الأساسية</a></li>
+          <li><a href="#details">تفاصيل إضافية</a></li>
+          <li><a href="#table">قائمة العناصر</a></li>
+        </ul>
+      </aside>
+
+      <main class="card-surface">
+        <section id="info">
+          <h2>المعلومات الأساسية</h2>
+          <div class="form-grid">
+            <div class="field col-6">
+              <label for="name">الاسم</label>
+              <input id="name" type="text" placeholder="اكتب الاسم هنا">
+            </div>
+            <div class="field col-6">
+              <label for="status">الحالة</label>
+              <select id="status">
+                <option>نشط</option>
+                <option>متوقف</option>
+              </select>
+            </div>
+            <div class="field col-12">
+              <label for="desc">الوصف</label>
+              <textarea id="desc" rows="4" placeholder="اكتب وصفاً مختصراً...\nيدعم العربية والـ RTL."></textarea>
+            </div>
+          </div>
+        </section>
+
+        <hr style="border:0; border-top:1px solid var(--border); margin: var(--space-5) 0" />
+
+        <section id="details">
+          <h2>تفاصيل إضافية</h2>
+          <div class="form-grid">
+            <div class="field col-6">
+              <label for="date">التاريخ</label>
+              <input id="date" type="date">
+            </div>
+            <div class="field col-6">
+              <label for="number">الرقم</label>
+              <input id="number" type="number" min="0" step="1" placeholder="0">
+            </div>
+          </div>
+        </section>
+
+        <hr style="border:0; border-top:1px solid var(--border); margin: var(--space-5) 0" />
+
+        <section id="table">
+          <h2>قائمة العناصر</h2>
+          <div class="card-surface">
+            <table>
+              <thead>
+                <tr>
+                  <th>المعرف</th>
+                  <th>الاسم</th>
+                  <th>الحالة</th>
+                  <th>إجراءات</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>#1001</td>
+                  <td>عنصر تجريبي</td>
+                  <td>نشط</td>
+                  <td class="actions">
+                    <button class="btn">عرض</button>
+                    <button class="btn" style="background: linear-gradient(180deg, var(--danger), #e63946); color: #fff;">حذف</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>#1002</td>
+                  <td>عنصر ثانٍ</td>
+                  <td>متوقف</td>
+                  <td class="actions">
+                    <button class="btn">عرض</button>
+                    <button class="btn" style="background: linear-gradient(180deg, var(--danger), #e63946); color: #fff;">حذف</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </main>
+    </div>
+  </div>
+</body>
+</html>
