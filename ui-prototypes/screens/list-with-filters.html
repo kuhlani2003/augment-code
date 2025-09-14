@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>قائمة بعناصر مع مرشحات</title>
+  <link rel="stylesheet" href="../styles/base.css">
+  <style>
+    .pagination { display:flex; gap:6px; justify-content:center; margin-top: 12px; }
+    .page { padding:6px 10px; border-radius: 8px; background:#0e1733; color: var(--text-1); text-decoration:none; }
+    .page.active { background: linear-gradient(180deg, var(--accent-9), var(--accent-8)); color:#05121f; font-weight:800; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="page-header">
+      <div>
+        <div class="breadcrumbs"><a href="../index.html" class="btn" style="padding:6px 10px">العودة</a></div>
+        <h1>قائمة مع المرشحات</h1>
+      </div>
+    </div>
+
+    <div class="card-surface">
+      <div class="form-grid">
+        <div class="field col-4">
+          <label>كلمة مفتاحية</label>
+          <input type="search" placeholder="بحث...">
+        </div>
+        <div class="field col-4">
+          <label>الحالة</label>
+          <select>
+            <option>الكل</option>
+            <option>نشط</option>
+            <option>متوقف</option>
+          </select>
+        </div>
+        <div class="field col-4">
+          <label>نطاق التاريخ</label>
+          <div style="display:flex; gap:8px;">
+            <input type="date">
+            <input type="date">
+          </div>
+        </div>
+      </div>
+      <div class="actions">
+        <button class="btn">تطبيق</button>
+        <button class="btn" style="background:linear-gradient(180deg,#adb5bd,#6c757d); color:#111;">إعادة تعيين</button>
+      </div>
+    </div>
+
+    <div class="card-surface" style="margin-top: var(--space-4)">
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>العنوان</th>
+            <th>الحالة</th>
+            <th>تاريخ الإنشاء</th>
+            <th>إجراءات</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>عنصر تجريبي</td>
+            <td>نشط</td>
+            <td>2025-09-10</td>
+            <td class="actions">
+              <button class="btn">عرض</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="pagination">
+        <a class="page" href="#">السابق</a>
+        <a class="page active" href="#">1</a>
+        <a class="page" href="#">2</a>
+        <a class="page" href="#">التالي</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

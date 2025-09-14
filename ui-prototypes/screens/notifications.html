@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>التنبيهات</title>
+  <link rel="stylesheet" href="../styles/base.css">
+  <style>
+    .notif { display:flex; gap: 12px; align-items: flex-start; padding: 12px; border:1px solid var(--border); border-radius: 12px; background:#0e1733; }
+    .notif + .notif { margin-top: 10px; }
+    .badge { padding: 4px 8px; border-radius: 999px; font-weight: 700; }
+    .badge.info { background: var(--accent-1); color: var(--accent-9); }
+    .badge.warn { background: rgba(255,209,102,.15); color:#ffd166; }
+    .badge.err { background: rgba(255,107,107,.18); color:#ff6b6b; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="page-header">
+      <div>
+        <div class="breadcrumbs"><a href="../index.html" class="btn" style="padding:6px 10px">العودة</a></div>
+        <h1>التنبيهات</h1>
+      </div>
+      <div class="actions">
+        <button class="btn">وضع علامة كمقروء</button>
+      </div>
+    </div>
+
+    <div class="card-surface">
+      <div class="notif">
+        <span class="badge info">معلومة</span>
+        <div>
+          <strong>تم إنشاء تقرير جديد</strong>
+          <div class="muted">قبل دقيقة</div>
+        </div>
+      </div>
+      <div class="notif">
+        <span class="badge warn">تحذير</span>
+        <div>
+          <strong>ارتفاع غير معتاد في زمن الاستجابة</strong>
+          <div class="muted">قبل 10 دقائق</div>
+        </div>
+      </div>
+      <div class="notif">
+        <span class="badge err">خطأ</span>
+        <div>
+          <strong>فشل مزود البريد في الإرسال</strong>
+          <div class="muted">قبل 25 دقيقة</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

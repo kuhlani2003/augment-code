@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>التقارير</title>
+  <link rel="stylesheet" href="../styles/base.css">
+</head>
+<body>
+  <div class="container">
+    <div class="page-header">
+      <div>
+        <div class="breadcrumbs"><a href="../index.html" class="btn" style="padding:6px 10px">العودة</a></div>
+        <h1>التقارير</h1>
+      </div>
+      <div class="actions">
+        <a class="btn" href="report-detail.html">إنشاء تقرير</a>
+      </div>
+    </div>
+
+    <div class="card-surface">
+      <div class="form-grid">
+        <div class="field col-6">
+          <label>بحث</label>
+          <input type="search" placeholder="ابحث عن تقرير...">
+        </div>
+        <div class="field col-6">
+          <label>تصنيف</label>
+          <select>
+            <option>الكل</option>
+            <option>تشغيلي</option>
+            <option>مالي</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-surface" style="margin-top: var(--space-4)">
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>العنوان</th>
+            <th>النوع</th>
+            <th>التاريخ</th>
+            <th>إجراءات</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>تقرير شهري</td>
+            <td>تشغيلي</td>
+            <td>2025-09-01</td>
+            <td class="actions">
+              <a class="btn" href="report-detail.html">عرض</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+</html>

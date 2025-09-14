@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>مصفوفة الصلاحيات</title>
+  <link rel="stylesheet" href="../styles/base.css">
+  <style>
+    .perm-table { overflow: auto; }
+    .perm-table table { min-width: 760px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="page-header">
+      <div>
+        <div class="breadcrumbs"><a href="roles-list.html" class="btn" style="padding:6px 10px">العودة</a></div>
+        <h1>مصفوفة الصلاحيات</h1>
+      </div>
+      <div class="actions">
+        <button class="btn">حفظ التغييرات</button>
+      </div>
+    </div>
+    <div class="card-surface perm-table">
+      <table>
+        <thead>
+          <tr>
+            <th>المورد</th>
+            <th>عرض</th>
+            <th>إنشاء</th>
+            <th>تعديل</th>
+            <th>حذف</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>المستخدمون</td>
+            <td><input type="checkbox" checked></td>
+            <td><input type="checkbox" checked></td>
+            <td><input type="checkbox" checked></td>
+            <td><input type="checkbox"></td>
+          </tr>
+          <tr>
+            <td>الأدوار</td>
+            <td><input type="checkbox" checked></td>
+            <td><input type="checkbox"></td>
+            <td><input type="checkbox"></td>
+            <td><input type="checkbox"></td>
+          </tr>
+          <tr>
+            <td>المنتجات</td>
+            <td><input type="checkbox" checked></td>
+            <td><input type="checkbox" checked></td>
+            <td><input type="checkbox" checked></td>
+            <td><input type="checkbox" checked></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+</html>

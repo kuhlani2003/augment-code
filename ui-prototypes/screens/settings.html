@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>الإعدادات العامة</title>
+  <link rel="stylesheet" href="../styles/base.css">
+  <style>
+    .tabs { display:flex; gap: 8px; flex-wrap: wrap; margin-bottom: var(--space-4); }
+    .tab { padding: 8px 12px; border-radius: 999px; background: #0e1733; color: var(--text-1); text-decoration: none; }
+    .tab.active { background: linear-gradient(180deg, var(--accent-9), var(--accent-8)); color: #05121f; font-weight: 800; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="page-header">
+      <div>
+        <div class="breadcrumbs"><a href="../index.html" class="btn" style="padding:6px 10px">العودة</a></div>
+        <h1>الإعدادات العامة</h1>
+      </div>
+      <div class="actions">
+        <button class="btn">حفظ</button>
+      </div>
+    </div>
+
+    <nav class="tabs">
+      <a class="tab active" href="#general">عام</a>
+      <a class="tab" href="#appearance">المظهر</a>
+      <a class="tab" href="#notifications">الإشعارات</a>
+      <a class="tab" href="#security">الأمان</a>
+    </nav>
+
+    <section id="general" class="card-surface">
+      <h3 style="margin-top:0">عام</h3>
+      <div class="form-grid">
+        <div class="field col-6">
+          <label for="siteName">اسم النظام</label>
+          <input id="siteName" type="text" placeholder="اسم النظام">
+        </div>
+        <div class="field col-6">
+          <label for="locale">اللغة الافتراضية</label>
+          <select id="locale">
+            <option>العربية</option>
+            <option>English</option>
+          </select>
+        </div>
+        <div class="field col-12">
+          <label for="timezone">المنطقة الزمنية</label>
+          <select id="timezone">
+            <option>Asia/Riyadh (UTC+3)</option>
+            <option>UTC</option>
+          </select>
+        </div>
+      </div>
+    </section>
+
+    <section id="appearance" class="card-surface" style="margin-top: var(--space-5)">
+      <h3 style="margin-top:0">المظهر</h3>
+      <div class="form-grid">
+        <div class="field col-6">
+          <label>الوضع</label>
+          <select>
+            <option>داكن</option>
+            <option>فاتح</option>
+            <option>حسب النظام</option>
+          </select>
+        </div>
+        <div class="field col-6">
+          <label>اللون الأساسي</label>
+          <input type="color" value="#4cc9f0">
+        </div>
+      </div>
+    </section>
+
+    <section id="notifications" class="card-surface" style="margin-top: var(--space-5)">
+      <h3 style="margin-top:0">الإشعارات</h3>
+      <div class="form-grid">
+        <div class="field col-6">
+          <label>بريد التنبيهات</label>
+          <input type="email" placeholder="alerts@example.com">
+        </div>
+        <div class="field col-6">
+          <label>تمكين إشعارات البريد</label>
+          <select>
+            <option>مفعل</option>
+            <option>موقّف</option>
+          </select>
+        </div>
+      </div>
+    </section>
+
+    <section id="security" class="card-surface" style="margin-top: var(--space-5)">
+      <h3 style="margin-top:0">الأمان</h3>
+      <div class="form-grid">
+        <div class="field col-6">
+          <label>السيشن (الدقائق)</label>
+          <input type="number" min="5" step="5" value="30">
+        </div>
+        <div class="field col-6">
+          <label>تفعيل 2FA</label>
+          <select>
+            <option>مفعل</option>
+            <option>موقّف</option>
+          </select>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>

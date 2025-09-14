@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>الملف الشخصي</title>
+  <link rel="stylesheet" href="../styles/base.css">
+  <style>
+    .avatar { width: 84px; height: 84px; border-radius: 50%; background:#0e1733; border:1px solid var(--border); display:inline-block; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="page-header">
+      <div>
+        <div class="breadcrumbs"><a href="../index.html" class="btn" style="padding:6px 10px">العودة</a></div>
+        <h1>الملف الشخصي</h1>
+      </div>
+      <div class="actions">
+        <a class="btn" href="change-password.html">تغيير كلمة المرور</a>
+        <button class="btn">حفظ</button>
+      </div>
+    </div>
+
+    <div class="card-surface">
+      <div class="form-grid">
+        <div class="field col-12" style="display:flex; align-items:center; gap:12px;">
+          <span class="avatar"></span>
+          <div class="actions">
+            <button class="btn">رفع صورة</button>
+            <button class="btn" style="background:linear-gradient(180deg,#f59f9f,#ef4444); color:#fff;">إزالة</button>
+          </div>
+        </div>
+        <div class="field col-6">
+          <label for="fullName">الاسم الكامل</label>
+          <input id="fullName" type="text" placeholder="الاسم الكامل">
+        </div>
+        <div class="field col-6">
+          <label for="email">البريد الإلكتروني</label>
+          <input id="email" type="email" placeholder="name@example.com">
+        </div>
+        <div class="field col-6">
+          <label for="phone">الهاتف</label>
+          <input id="phone" type="tel" placeholder="05xxxxxxxx">
+        </div>
+        <div class="field col-6">
+          <label for="locale">اللغة</label>
+          <select id="locale">
+            <option>العربية</option>
+            <option>English</option>
+          </select>
+        </div>
+        <div class="field col-12">
+          <label for="bio">نبذة</label>
+          <textarea id="bio" rows="3" placeholder="نبذة مختصرة"></textarea>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

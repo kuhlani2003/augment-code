@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>سجلات النظام</title>
+  <link rel="stylesheet" href="../styles/base.css">
+  <style>
+    .filters { display:flex; gap: 8px; flex-wrap: wrap; margin-bottom: var(--space-4); }
+    .level { padding: 6px 10px; border-radius: 999px; background:#0e1733; color: var(--text-1); text-decoration: none; }
+    .level.active { background: linear-gradient(180deg, var(--accent-9), var(--accent-8)); color:#05121f; font-weight:800; }
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="page-header">
+      <div>
+        <div class="breadcrumbs"><a href="../index.html" class="btn" style="padding:6px 10px">العودة</a></div>
+        <h1>سجلات النظام</h1>
+      </div>
+    </div>
+
+    <div class="card-surface">
+      <div class="filters">
+        <input type="search" placeholder="بحث في الرسائل (نصي)">
+        <select>
+          <option>الكل</option>
+          <option>INFO</option>
+          <option>WARN</option>
+          <option>ERROR</option>
+        </select>
+        <input type="datetime-local">
+        <input type="datetime-local">
+        <button class="btn">تطبيق المرشحات</button>
+      </div>
+      <table class="mono">
+        <thead>
+          <tr>
+            <th>الوقت</th>
+            <th>المستوى</th>
+            <th>المصدر</th>
+            <th>الرسالة</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2025-09-14 10:22:01</td>
+            <td>INFO</td>
+            <td>auth</td>
+            <td>User login success: userId=42</td>
+          </tr>
+          <tr>
+            <td>2025-09-14 10:18:33</td>
+            <td>ERROR</td>
+            <td>api</td>
+            <td>Failed to fetch report data (500)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+</html>

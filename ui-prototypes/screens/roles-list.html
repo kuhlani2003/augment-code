@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>الأدوار</title>
+  <link rel="stylesheet" href="../styles/base.css">
+</head>
+<body>
+  <div class="container">
+    <div class="page-header">
+      <div>
+        <div class="breadcrumbs"><a href="../index.html" class="btn" style="padding:6px 10px">العودة</a></div>
+        <h1>الأدوار</h1>
+      </div>
+      <div class="actions">
+        <a href="role-form.html" class="btn">دور جديد</a>
+        <a href="permissions.html" class="btn" style="background:linear-gradient(180deg,#b2f7ef,#5df2d6)">مصفوفة الصلاحيات</a>
+      </div>
+    </div>
+
+    <div class="card-surface">
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>اسم الدور</th>
+            <th>الوصف</th>
+            <th>عدد المستخدمين</th>
+            <th>إجراءات</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>مدير</td>
+            <td>تحكم كامل</td>
+            <td>4</td>
+            <td class="actions">
+              <a class="btn" href="role-form.html">تعديل</a>
+              <button class="btn" style="background: linear-gradient(180deg, var(--danger), #e63946); color: #fff;">حذف</button>
+            </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>محرر</td>
+            <td>تحكم بالمحتوى</td>
+            <td>9</td>
+            <td class="actions">
+              <a class="btn" href="role-form.html">تعديل</a>
+              <button class="btn" style="background: linear-gradient(180deg, var(--danger), #e63946); color: #fff;">حذف</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+</html>
